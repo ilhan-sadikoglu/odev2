@@ -11,15 +11,15 @@ public:
 	sayi(double,double);//reel+karmaþýk
 	
 
-	void setGercek(double);//gerçek kýsmý düzenler
-	void getGercek();//gerçek kýsmý getirir
-	void setKarmasik(double);//karmaþýk kýsmý düzenler
-	void getKarmasik();//karmaþýk kýsmý getirir
+	void setGercek(const double& a);//gerçek kýsmý düzenler
+	void getGercek()const;//gerçek kýsmý getirir
+	void setKarmasik(const double& a);//karmaþýk kýsmý düzenler
+	void getKarmasik()const;//karmaþýk kýsmý getirir
 	
-	int add(sayi);
-	int subtract(sayi);
-	int divide(sayi);
-	int print();
+	void add(const sayi&);
+	void subtract(const sayi&);
+	void divide(const sayi&);
+	void print();
 
 	
 
