@@ -52,6 +52,20 @@ sayi::sayi(double a,double b)//iki deðeri  de alan constructer
 
 }
 
+sayi::sayi(string st1)//iki deðeri  de alan constructer
+{
+	size_t found;
+	found = st1.find_first_of("+");
+	string st2(st1.begin(), st1.begin() + found);
+	string st3(st1.begin() + found + 1, st1.end()-1);
+	
+	int r = std::stoi(st2);
+	int im = std::stoi(st3);
+
+	setGercek(r);
+	setKarmasik(im);
+}
+
 
 void sayi::print() {//nesnenin reel ve karmaþýk kýsmýný yazdýram constructer
 	getGercek();

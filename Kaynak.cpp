@@ -7,6 +7,7 @@ int main(){
 	sayi s2(10);//int alan
 	sayi s3(3.14);//double alan
 	sayi s4(3, 18);//ikisini de alan
+	sayi s5("234234 + 65456i");
 	cout << "getler: " << endl;
 	s1.getGercek();
 	s1.getKarmasik();
@@ -16,6 +17,8 @@ int main(){
 	s3.getKarmasik();
 	s4.getGercek();
 	s4.getKarmasik();
+	s5.getGercek();
+	s5.getKarmasik();
 
 	s1.setGercek(12);
 	s1.setKarmasik(14);
@@ -31,6 +34,7 @@ int main(){
 	s2.print();
 	s3.print();
 	s4.print();
+	s5.print();
 
 	cout << "\ntoplama" << endl;
 	s1.add(s2);
