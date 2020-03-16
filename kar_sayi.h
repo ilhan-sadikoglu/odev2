@@ -9,7 +9,7 @@ public:
 	sayi(double);//reel
 	sayi(int);//tam
 	sayi(double,double);//reel+karmaþýk
-	sayi(string st1);
+	sayi(const string& st1);
 	
 
 	void setGercek(const double& a);//gerçek kýsmý düzenler
